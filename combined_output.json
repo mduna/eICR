@@ -1,0 +1,500 @@
+INDIVIDUAL RESULTS
+==================================================
+CDA Element Analysis Results
+==================================================
+Total XPaths processed: 22
+Elements found: 22
+Elements not found: 0
+
+FOUND ELEMENTS:
+------------------------------
+XPath: ClinicalDocument/effectiveTime/@value
+  Element: {urn:hl7-org:v3}effectiveTime
+  Text: @value=20201107094421-0500
+  Value: 20201107094421-0500
+
+XPath: ClinicalDocument/title
+  Element: {urn:hl7-org:v3}title
+  Text: Initial Public Health Case Report
+  Attributes: {}
+
+XPath: ClinicalDocument/recordTarget/patientRole/patient/name/given
+  Element: {urn:hl7-org:v3}given
+  Text: Eve
+  Attributes: {}
+
+XPath: ClinicalDocument/recordTarget/patientRole/patient/name/given
+  Element: {urn:hl7-org:v3}given
+  Text: H
+  Other Attributes: {'qualifier': 'IN'}
+
+XPath: ClinicalDocument/recordTarget/patientRole/patient/name/given
+  Element: {urn:hl7-org:v3}given
+  Text: Ruth
+  Attributes: {}
+
+XPath: ClinicalDocument/recordTarget/patientRole/patient/name/given
+  Element: {urn:hl7-org:v3}given
+  Text: L
+  Other Attributes: {'qualifier': 'IN'}
+
+XPath: ClinicalDocument/recordTarget/patientRole/patient/name/family
+  Element: {urn:hl7-org:v3}family
+  Text: Everywoman
+  Attributes: {}
+
+XPath: ClinicalDocument/recordTarget/patientRole/patient/name/family
+  Element: {urn:hl7-org:v3}family
+  Text: Everywoman
+  Attributes: {}
+
+XPath: ClinicalDocument/recordTarget/patientRole/patient/name
+  Element: {urn:hl7-org:v3}name
+  Text: 
+                    
+  Other Attributes: {'use': 'L'}
+
+XPath: ClinicalDocument/recordTarget/patientRole/patient/name
+  Element: {urn:hl7-org:v3}name
+  Text: 
+                    
+  Other Attributes: {'use': 'A'}
+
+XPath: ClinicalDocument/recordTarget/patientRole/addr
+  Element: {urn:hl7-org:v3}addr
+  Text: 
+                
+  Other Attributes: {'use': 'H'}
+
+XPath: ClinicalDocument/recordTarget/patientRole/addr/@use
+  Element: {urn:hl7-org:v3}addr
+  Text: @use=H
+  Other Attributes: {'use': 'H'}
+
+XPath: ClinicalDocument/recordTarget/patientRole/addr/city
+  Element: {urn:hl7-org:v3}city
+  Text: Ann Arbor
+  Attributes: {}
+
+XPath: ClinicalDocument/recordTarget/patientRole/addr/state
+  Element: {urn:hl7-org:v3}state
+  Text: MI
+  Attributes: {}
+
+XPath: ClinicalDocument/recordTarget/patientRole/addr/country
+  Element: {urn:hl7-org:v3}country
+  Text: US
+  Attributes: {}
+
+XPath: ClinicalDocument/recordTarget/patientRole/addr/postalCode
+  Element: {urn:hl7-org:v3}postalCode
+  Text: 99999
+  Attributes: {}
+
+XPath: ClinicalDocument/recordTarget/patientRole/patient/birthTime/@value
+  Element: {urn:hl7-org:v3}birthTime
+  Text: @value=19741124
+  Value: 19741124
+
+XPath: ClinicalDocument/componentOf/encompassingEncounter/location/healthCareFacility/serviceProviderOrganization/name
+  Element: {urn:hl7-org:v3}name
+  Text: Good Health Hospital
+  Attributes: {}
+
+XPath: ClinicalDocument/componentOf/encompassingEncounter/location/healthCareFacility/serviceProviderOrganization/addr/streetAddressLine
+  Element: {urn:hl7-org:v3}streetAddressLine
+  Text: 1000 Hospital Lane
+  Attributes: {}
+
+XPath: ClinicalDocument/componentOf/encompassingEncounter/location/healthCareFacility/serviceProviderOrganization/addr/city
+  Element: {urn:hl7-org:v3}city
+  Text: Ann Arbor
+  Attributes: {}
+
+XPath: ClinicalDocument/componentOf/encompassingEncounter/location/healthCareFacility/serviceProviderOrganization/addr/state
+  Element: {urn:hl7-org:v3}state
+  Text: MI
+  Attributes: {}
+
+XPath: ClinicalDocument/componentOf/encompassingEncounter/location/healthCareFacility/serviceProviderOrganization/addr/postalCode
+  Element: {urn:hl7-org:v3}postalCode
+  Text: 99999
+  Attributes: {}
+
+
+GROUPED RESULTS
+==================================================
+CDA Grouped Element Analysis Results
+==================================================
+Total template groups: 15
+Total instances found: 36
+
+Template: Lab Result Observation
+Template ID: 2.16.840.1.113883.10.20.22.4.44
+Instances: 2
+XPath Expressions:
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.44']]/code/@code
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.44']]/code/@displayName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.44']]/code/@codeSystemName
+----------------------------------------
+Instance 1:
+  code:
+    Code: 80825-3 | DisplayName: Zika virus envelope (E) gene [Presence] in Serum by Probe and target amplification method | System: LOINC
+
+Instance 2:
+  code:
+    Code: 385857005 | DisplayName: Ventilator care and adjustment (regime/therapy) | System: SNOMED CT
+
+
+Template: Problem Observation
+Template ID: 2.16.840.1.113883.10.20.22.4.2
+Instances: 4
+XPath Expressions:
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.2']]/code/@code
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.2']]/code/@displayName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.2']]/code/@codeSystemName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.2']]/value/@value
+----------------------------------------
+Instance 1:
+  code:
+    Code: 20570-8 | DisplayName: Hematocrit | System: LOINC
+  value:
+    Code: 35.3
+
+Instance 2:
+  code:
+    Code: 731-0 | DisplayName: Lymphocytes [#/​volume] in Blood by Automated count | System: LOINC
+  value:
+    Code: 5.2
+
+Instance 3:
+  code:
+    Code: 11585-7 | DisplayName: Bordetella pertussis Ab [Units/volume] in Serum | System: LOINC
+  value:
+    Code: 100
+
+Instance 4:
+  code:
+    Code: local_code_pertussis | DisplayName: Bordetella pertussis in Throat by Organism specific culture | System: local_coding_system
+
+
+Template: Template 2.16.840.1.113883.10.20.15.2.3.2
+Template ID: 2.16.840.1.113883.10.20.15.2.3.2
+Instances: 2
+XPath Expressions:
+  - observation[templateId[@root='2.16.840.1.113883.10.20.15.2.3.2']]/code/@code
+  - observation[templateId[@root='2.16.840.1.113883.10.20.15.2.3.2']]/code/@displayName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.15.2.3.2']]/code/@codeSystemName
+----------------------------------------
+Instance 1:
+  code:
+    Code: 11585-7 | DisplayName: Bordetella pertussis Ab [Units/volume] in Serum | System: LOINC
+
+Instance 2:
+  code:
+    Code: local_code_pertussis | DisplayName: Bordetella pertussis in Throat by Organism specific culture | System: local_coding_system
+
+
+Template: Template 2.16.840.1.113883.10.20.15.2.3.3
+Template ID: 2.16.840.1.113883.10.20.15.2.3.3
+Instances: 1
+XPath Expressions:
+  - observation[templateId[@root='2.16.840.1.113883.10.20.15.2.3.3']]/code/@code
+  - observation[templateId[@root='2.16.840.1.113883.10.20.15.2.3.3']]/code/@displayName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.15.2.3.3']]/code/@codeSystemName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.15.2.3.3']]/value/@code
+  - observation[templateId[@root='2.16.840.1.113883.10.20.15.2.3.3']]/value/@displayName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.15.2.3.3']]/value/@codeSystemName
+----------------------------------------
+Instance 1:
+  code:
+    Code: 29308-4 | DisplayName: Diagnosis | System: LOINC
+  value:
+    Code: 27836007 | DisplayName: Pertussis (disorder) | System: SNOMED CT
+
+
+Template: Template 2.16.840.1.113883.10.20.22.4.4
+Template ID: 2.16.840.1.113883.10.20.22.4.4
+Instances: 6
+XPath Expressions:
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.4']]/code/@code
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.4']]/value/@code
+----------------------------------------
+Instance 1:
+  code:
+    Code: 29308-4
+  value:
+    Code: 27836007
+
+Instance 2:
+  code:
+    Code: 29308-4
+  value:
+    Code: 282291009
+
+Instance 3:
+  code:
+    Code: 75325-1
+  value:
+    Code: 35064005
+
+Instance 4:
+  code:
+    Code: 75322-8
+  value:
+    Code: 43025008
+
+Instance 5:
+  code:
+    Code: 75325-1
+  value:
+    Code: 35064005
+
+Instance 6:
+  code:
+    Code: 75322-8
+  value:
+    Code: 43025008
+
+
+Template: Template 2.16.840.1.113883.10.20.22.4.12
+Template ID: 2.16.840.1.113883.10.20.22.4.12
+Instances: 1
+XPath Expressions:
+  - act[templateId[@root='2.16.840.1.113883.10.20.22.4.12']]/code/@code
+----------------------------------------
+Instance 1:
+  code:
+    Code: 409524006
+
+
+Template: Template 2.16.840.1.113883.10.20.22.4.3
+Template ID: 2.16.840.1.113883.10.20.22.4.3
+Instances: 2
+XPath Expressions:
+  - act[templateId[@root='2.16.840.1.113883.10.20.22.4.3']]/code/@code
+  - act[templateId[@root='2.16.840.1.113883.10.20.22.4.3']]/code/@displayName
+  - act[templateId[@root='2.16.840.1.113883.10.20.22.4.3']]/code/@codeSystemName
+  - act[templateId[@root='2.16.840.1.113883.10.20.22.4.3']]/effectiveTime/low/@value
+  - act[templateId[@root='2.16.840.1.113883.10.20.22.4.3']]/statusCode/@code
+----------------------------------------
+Instance 1:
+  code:
+    Code: CONC | DisplayName: Concern
+  statusCode:
+    Code: active
+  effectiveTime/low:
+    Code: 20201107
+
+Instance 2:
+  code:
+    Code: CONC | DisplayName: Concern
+  statusCode:
+    Code: active
+  effectiveTime/low:
+    Code: 20200523
+
+
+Template: Template 2.16.840.1.113883.10.20.22.4.1
+Template ID: 2.16.840.1.113883.10.20.22.4.1
+Instances: 3
+XPath Expressions:
+  - organizer[templateId[@root='2.16.840.1.113883.10.20.22.4.1']]/code/@code
+----------------------------------------
+Instance 1:
+  code:
+    Code: 57021-8
+
+Instance 2:
+  code:
+    Code: 11585-7
+
+Instance 3:
+  code:
+    Code: 548-8
+
+
+Template: Template 2.16.840.1.113883.10.20.22.4.38
+Template ID: 2.16.840.1.113883.10.20.22.4.38
+Instances: 1
+XPath Expressions:
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.38']]/code/@code
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.38']]/value/@code
+----------------------------------------
+Instance 1:
+  code:
+    Code: 76691-5
+  value:
+    Code: 407377005
+
+
+Template: Vital Signs Observation
+Template ID: 2.16.840.1.113883.10.20.22.4.27
+Instances: 9
+XPath Expressions:
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.27']]/code/@code
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.27']]/code/@displayName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.27']]/code/@codeSystemName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.27']]/value/@value
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.27']]/value/@displayName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.27']]/value/@codeSystemName
+----------------------------------------
+Instance 1:
+  code:
+    Code: 8480-6 | DisplayName: SYSTOLIC BLOOD PRESSURE | System: LOINC
+  value:
+    Code: 120
+
+Instance 2:
+  code:
+    Code: 8462-4 | DisplayName: DIASTOLIC BLOOD PRESSURE | System: LOINC
+  value:
+    Code: 80
+
+Instance 3:
+  code:
+    Code: 8867-4 | DisplayName: HEART RATE | System: LOINC
+  value:
+    Code: 80
+
+Instance 4:
+  code:
+    Code: 8310-5 | DisplayName: BODY TEMPERATURE | System: LOINC
+  value:
+    Code: 99.0
+
+Instance 5:
+  code:
+    Code: 9279-1 | DisplayName: RESPIRATORY RATE | System: LOINC
+  value:
+    Code: 18
+
+Instance 6:
+  code:
+    Code: 8302-2 | DisplayName: HEIGHT | System: LOINC
+  value:
+    Code: 67
+
+Instance 7:
+  code:
+    Code: 3141-9 | DisplayName: WEIGHT | System: LOINC
+  value:
+    Code: 239.9
+
+Instance 8:
+  code:
+    Code: 39156-5 | DisplayName: BODY MASS INDEX | System: LOINC
+  value:
+    Code: 37.58
+
+Instance 9:
+  code:
+    Code: 2710-2 | DisplayName: OXYGEN SATURATION | System: LOINC
+  value:
+    Code: 98
+
+
+Template: Template 2.16.840.1.113883.10.20.22.4.109
+Template ID: 2.16.840.1.113883.10.20.22.4.109
+Instances: 1
+XPath Expressions:
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.109']]/code/@code
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.109']]/code/@displayName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.109']]/code/@codeSystemName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.109']]/value/@code
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.109']]/value/@displayName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.109']]/value/@codeSystemName
+----------------------------------------
+Instance 1:
+  code:
+    Code: 75274-1 | DisplayName: Characteristics of residence
+  value:
+    Code: 32911000 | DisplayName: Homeless (finding) | System: SNOMED CT
+
+
+Template: Template 2.16.840.1.113883.10.20.22.4.293
+Template ID: 2.16.840.1.113883.10.20.22.4.293
+Instances: 1
+XPath Expressions:
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.293']]/code/@code
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.293']]/code/@displayName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.293']]/code/@codeSystemName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.293']]/value/@code
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.293']]/value/@displayName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.293']]/value/@codeSystemName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.293']]/methodCode/@code
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.293']]/methodCode/@displayName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.293']]/methodCode/@codeSystemName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.293']]/effectiveTime/low/@value
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.293']]/author/time/@value
+----------------------------------------
+Instance 1:
+  author/time:
+    Code: 201710011035
+  methodCode:
+    Code: 16310003 | DisplayName: Diagnostic ultrasonography (procedure) | System: SNOMED CT
+  value:
+    Code: 77386006 | DisplayName: Pregnant | System: SNOMED CT
+  code:
+    Code: ASSERTION
+  effectiveTime/low:
+    Code: 20170826
+
+
+Template: Template 2.16.840.1.113883.10.20.22.4.284
+Template ID: 2.16.840.1.113883.10.20.22.4.284
+Instances: 1
+XPath Expressions:
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.284']]/code/@code
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.284']]/code/@displayName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.284']]/code/@codeSystemName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.284']]/value/@code
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.284']]/value/@displayName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.284']]/value/@codeSystemName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.284']]/effectiveTime/@value
+----------------------------------------
+Instance 1:
+  effectiveTime:
+    Code: 202001050850
+  code:
+    Code: 63893-2 | DisplayName: Outcome of Pregnancy | System: LOINC
+  value:
+    Code: 237364002 | DisplayName: Stillbirth (finding) | System: SNOMED CT
+
+
+Template: Template 2.16.840.1.113883.10.20.22.4.297
+Template ID: 2.16.840.1.113883.10.20.22.4.297
+Instances: 1
+XPath Expressions:
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.297']]/code/@code
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.297']]/code/@displayName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.297']]/code/@codeSystemName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.297']]/value/@value
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.297']]/value/@displayName
+  - observation[templateId[@root='2.16.840.1.113883.10.20.22.4.297']]/value/@codeSystemName
+----------------------------------------
+Instance 1:
+  code:
+    Code: 11780-4 | DisplayName: Delivery date estimated from ovulation date | System: LOINC
+  value:
+    Code: 20170522
+
+
+Template: Template 2.16.840.1.113883.10.20.22.4.415
+Template ID: 2.16.840.1.113883.10.20.22.4.415
+Instances: 1
+XPath Expressions:
+  - procedure[templateId[@root='2.16.840.1.113883.10.20.22.4.415']]/code/@code
+  - procedure[templateId[@root='2.16.840.1.113883.10.20.22.4.415']]/code/@displayName
+  - procedure[templateId[@root='2.16.840.1.113883.10.20.22.4.415']]/code/@codeSystemName
+  - procedure[templateId[@root='2.16.840.1.113883.10.20.22.4.415']]/effectiveTime/low/@value
+  - procedure[templateId[@root='2.16.840.1.113883.10.20.22.4.415']]/participant[templateId[@root='2.16.840.1.113883.10.20.22.4.410']]/participantRole/id/@root
+----------------------------------------
+Instance 1:
+  procedure/code:
+    Code: 17636008 | DisplayName: Specimen collection (procedure) | System: SNOMED CT
+  effectiveTime/low:
+    Code: 20200309
+  participantRole/id:
+    Code: 44fd0410-6115-4b8e-8ee9-a51b3817df66
+

@@ -4,18 +4,44 @@
 ## Document Header must have
 ClinicalDocument/effectiveTime/@value - Document timestamp
 ClinicalDocument/title - Document title
+ClinicalDocument/id/@root
+ClinicalDocument/setId/@root
+ClinicalDocument/versionNumber/@value
 
 ## Patient Demographics  must have
+ClinicalDocument/recordTarget/patientRole/id/@root
 ClinicalDocument/recordTarget/patientRole/patient/name/given - Patient first name
 ClinicalDocument/recordTarget/patientRole/patient/name/family - Patient last name
 ClinicalDocument/recordTarget/patientRole/patient/name        - Patient  name
+
 ClinicalDocument/recordTarget/patientRole/addr - Patient address
 ClinicalDocument/recordTarget/patientRole/addr/@use - Patient address use
 ClinicalDocument/recordTarget/patientRole/addr/city - Patient address city
 ClinicalDocument/recordTarget/patientRole/addr/state - Patient address state
 ClinicalDocument/recordTarget/patientRole/addr/country - Patient address country
 ClinicalDocument/recordTarget/patientRole/addr/postalCode - Patient address postal code
+ClinicalDocument/recordTarget/patientRole/telecom/@use
+ClinicalDocument/recordTarget/patientRole/telecom/@value
+
 ClinicalDocument/recordTarget/patientRole/patient/birthTime/@value - Patient birth
+ClinicalDocument/recordTarget/patientRole/patient/administrativeGenderCode/@code
+ClinicalDocument/recordTarget/patientRole/patient/raceCode/@code
+ClinicalDocument/recordTarget/patientRole/patient/ethnicGroupCode/@code
+ClinicalDocument/recordTarget/patientRole/patient/dtc:deceasedInd/@value
+ClinicalDocument/recordTarget/patientRole/patient/dtc:deceasedTime/@value
+
+ClinicalDocument/recordTarget/patientRole/patient/guardian/telecom/@use
+ClinicalDocument/recordTarget/patientRole/patient/guardian/telecom/@value
+ClinicalDocument/recordTarget/patientRole/patient/guardian/addr/streetAddressLine
+ClinicalDocument/recordTarget/patientRole/patient/guardian/addr/city
+ClinicalDocument/recordTarget/patientRole/patient/guardian/addr/state
+ClinicalDocument/recordTarget/patientRole/patient/guardian/addr/postalCode
+
+ClinicalDocument/recordTarget/patientRole/patient/guardian/code
+ClinicalDocument/recordTarget/patientRole/patient/guardian/guardianPerson/name/given
+ClinicalDocument/recordTarget/patientRole/patient/guardian/guardianPerson/name/family
+ClinicalDocument/recordTarget/patientRole/patient/guardian
+
 ClinicalDocument/componentOf/encompassingEncounter/location/healthCareFacility/serviceProviderOrganization/name
 ClinicalDocument/componentOf/encompassingEncounter/location/healthCareFacility/serviceProviderOrganization/addr/streetAddressLine
 ClinicalDocument/componentOf/encompassingEncounter/location/healthCareFacility/serviceProviderOrganization/addr/city
@@ -28,20 +54,20 @@ observation[templateId[@root='2.16.840.1.113883.10.20.22.4.44']]/code/@displayNa
 observation[templateId[@root='2.16.840.1.113883.10.20.22.4.44']]/code/@codeSystemName
 
 
-## Result Observations (Lab Results)
+## Result Observations (Lab Results Must Have) 
 observation[templateId[@root='2.16.840.1.113883.10.20.22.4.2']]/code/@code - Lab test code
 observation[templateId[@root='2.16.840.1.113883.10.20.22.4.2']]/code/@displayName
 observation[templateId[@root='2.16.840.1.113883.10.20.22.4.2']]/code/@codeSystemName
 
 observation[templateId[@root='2.16.840.1.113883.10.20.22.4.2']]/value/@value - Lab test value
 
-## Result trigger 
+## Result trigger (Must Have)
 observation[templateId[@root='2.16.840.1.113883.10.20.15.2.3.2']]/code/@code
 observation[templateId[@root='2.16.840.1.113883.10.20.15.2.3.2']]/code/@displayName
 observation[templateId[@root='2.16.840.1.113883.10.20.15.2.3.2']]/code/@codeSystemName
 
 
-## Problem trigger 
+## Problem trigger (Must Have)
 observation[templateId[@root='2.16.840.1.113883.10.20.15.2.3.3']]/code/@code
 observation[templateId[@root='2.16.840.1.113883.10.20.15.2.3.3']]/code/@displayName
 observation[templateId[@root='2.16.840.1.113883.10.20.15.2.3.3']]/code/@codeSystemName
@@ -52,12 +78,18 @@ observation[templateId[@root='2.16.840.1.113883.10.20.15.2.3.3']]/value/@codeSys
 
 ## Problem Observations (Diagnoses) 
 observation[templateId[@root='2.16.840.1.113883.10.20.22.4.4']]/code/@code - Problem code
+observation[templateId[@root='2.16.840.1.113883.10.20.22.4.4']]/code/@displayName
+observation[templateId[@root='2.16.840.1.113883.10.20.22.4.4']]/code/@codeSystemName
 observation[templateId[@root='2.16.840.1.113883.10.20.22.4.4']]/value/@code - Problem value code
+observation[templateId[@root='2.16.840.1.113883.10.20.22.4.4']]/value/@displayName
+observation[templateId[@root='2.16.840.1.113883.10.20.22.4.4']]/value/@codeSystemName
 
 ## Medical Equipment (Act elements)
 act[templateId[@root='2.16.840.1.113883.10.20.22.4.12']]/code/@code - Medical equipment code
+act[templateId[@root='2.16.840.1.113883.10.20.22.4.12']]/code/@displayName
+act[templateId[@root='2.16.840.1.113883.10.20.22.4.12']]/code/@codeSystemName
 
-## Problem concer Act
+## Problem concer Act (Must Have)
 act[templateId[@root='2.16.840.1.113883.10.20.22.4.3']]/code/@code
 act[templateId[@root='2.16.840.1.113883.10.20.22.4.3']]/code/@displayName
 act[templateId[@root='2.16.840.1.113883.10.20.22.4.3']]/code/@codeSystemName
@@ -67,10 +99,16 @@ act[templateId[@root='2.16.840.1.113883.10.20.22.4.3']]/statusCode/@code
 
 ## Result Organizers (Test batteries)
 organizer[templateId[@root='2.16.840.1.113883.10.20.22.4.1']]/code/@code - Test battery code
+organizer[templateId[@root='2.16.840.1.113883.10.20.22.4.1']]/code/@displayName
+organizer[templateId[@root='2.16.840.1.113883.10.20.22.4.1']]/code/@codeSystemName
 
 ## Social History
 observation[templateId[@root='2.16.840.1.113883.10.20.22.4.38']]/code/@code - Social history observation
+observation[templateId[@root='2.16.840.1.113883.10.20.22.4.38']]/code/@displayName
+observation[templateId[@root='2.16.840.1.113883.10.20.22.4.38']]/code/@codeSystemName
 observation[templateId[@root='2.16.840.1.113883.10.20.22.4.38']]/value/@code - Social history value
+observation[templateId[@root='2.16.840.1.113883.10.20.22.4.38']]/value/@displayName
+observation[templateId[@root='2.16.840.1.113883.10.20.22.4.38']]/value/@codeSystemName
 
 ## Vital Signs
 observation[templateId[@root='2.16.840.1.113883.10.20.22.4.27']]/code/@code - Vital sign code
@@ -80,7 +118,7 @@ observation[templateId[@root='2.16.840.1.113883.10.20.22.4.27']]/value/@value - 
 observation[templateId[@root='2.16.840.1.113883.10.20.22.4.27']]/value/@displayName
 observation[templateId[@root='2.16.840.1.113883.10.20.22.4.27']]/value/@codeSystemName
 
-## Home environmnent
+## Home environmnent (Must Have)
 observation[templateId[@root='2.16.840.1.113883.10.20.22.4.109']]/code/@code - Pregnancy observation code
 observation[templateId[@root='2.16.840.1.113883.10.20.22.4.109']]/code/@displayName
 observation[templateId[@root='2.16.840.1.113883.10.20.22.4.109']]/code/@codeSystemName
@@ -88,6 +126,18 @@ observation[templateId[@root='2.16.840.1.113883.10.20.22.4.109']]/value/@code - 
 observation[templateId[@root='2.16.840.1.113883.10.20.22.4.109']]/value/@displayName
 observation[templateId[@root='2.16.840.1.113883.10.20.22.4.109']]/value/@codeSystemName
 
+## bith sex
+observation[templateId[@root='2.16.840.1.113883.10.20.22.4.200']]/value/@code 
+observation[templateId[@root='2.16.840.1.113883.10.20.22.4.200']]/value/@displayName
+observation[templateId[@root='2.16.840.1.113883.10.20.22.4.200']]/value/@codeSystemName
+
+## Gender Identity
+observation[templateId[@root='2.16.840.1.113883.10.20.34.3.45']]/code/@code 
+observation[templateId[@root='2.16.840.1.113883.10.20.34.3.45']]/code/@displayName
+observation[templateId[@root='2.16.840.1.113883.10.20.34.3.45']]/code/@codeSystemName
+observation[templateId[@root='2.16.840.1.113883.10.20.34.3.45']]/value/@code
+observation[templateId[@root='2.16.840.1.113883.10.20.34.3.45']]/value/@displayName
+observation[templateId[@root='2.16.840.1.113883.10.20.34.3.45']]/value/@codeSystemName
 
 ## Pregnancy Observations
 observation[templateId[@root='2.16.840.1.113883.10.20.22.4.293']]/code/@code - Pregnancy observation code
@@ -119,7 +169,7 @@ observation[templateId[@root='2.16.840.1.113883.10.20.22.4.297']]/value/@value -
 observation[templateId[@root='2.16.840.1.113883.10.20.22.4.297']]/value/@displayName
 observation[templateId[@root='2.16.840.1.113883.10.20.22.4.297']]/value/@codeSystemName
 
-## Procedure
+## Procedure (Must Have)
 procedure[templateId[@root='2.16.840.1.113883.10.20.22.4.415']]/code/@code
 procedure[templateId[@root='2.16.840.1.113883.10.20.22.4.415']]/code/@displayName
 procedure[templateId[@root='2.16.840.1.113883.10.20.22.4.415']]/code/@codeSystemName

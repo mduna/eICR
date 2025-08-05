@@ -270,13 +270,19 @@ class CDAElementFinder:
         # Add namespace prefixes where needed
         converted = xpath
         
+        # Fix common namespace prefix issues
+        # Convert dtc: to sdtc: (common mistake in XPath expressions)
+        converted = converted.replace('dtc:', 'sdtc:')
+        
         # Replace common CDA elements with namespaced versions
         cda_elements = [
             'ClinicalDocument', 'recordTarget', 'patientRole', 'patient',
+            'setId', 'versionNumber',
             'encompassingEncounter', 'observation', 'organizer', 'entry',
             'section', 'component', 'act', 'substanceAdministration', 'name',
             'given', 'family', 'addr', 'city', 'state', 'telecom', 'effectiveTime',
-            'title', 'id', 'administrativeGenderCode', 'birthTime', 'raceCode',
+            'title', 'id', 'administrativeGenderCode', 'birthTime', 'raceCode', 'ethnicGroupCode',
+            'guardian', 'guardianPerson',
             'low', 'high', 'methodCode', 'author', 'time', 'value', 'templateId',
             'country', 'postalCode', 'county', 'streetAddressLine', 'componentOf',
             'location', 'healthCareFacility', 'serviceProviderOrganization', 'statusCode',
